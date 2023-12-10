@@ -1,336 +1,264 @@
-* {
-    box-sizing: border-box;
+/* * {
+  box-sizing: border-box;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFF;
-    line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #fff;
+  line-height: 24px;
 }
 
 a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    display: block;
+  text-decoration: none; /* задает разные эффекты тексту, нижнее и верхнее подчеркивание и зачеркивание */
 }
 
 ul {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Все маркеры будут скрыты.*/
+}
+.section-promo {
+  background-color: #2e2f42;
+}
+.section-team {
+  background-color: #f4f4fd;
 }
 
-.container {
-    display: flex;
-    max-width: 1158px;
-    padding-left: 0;
-    padding-right: 0;
-
-    padding: 0 15px;
-    margin-left: 0;
-    margin-right: 0;
-    margin: 0 auto;
-}
-
-.section {
-    padding: 120px 0;
-}
-
-/* HEADER */
+/* HEDER */
 .header {
-    border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc; /* Стиль линии в низу элемента */
 }
-
+.container {
+  display: flex;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 .header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* отодвигает текст дочерных элементов */
 }
-
 .navigations {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center; /* вирівнювання навігації та контактів по вертикалі */
 }
-
-.nav-items {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-item a {
-    padding: 24px 0;
-}
-
-.contact-items {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.contact-item {
-    padding: 24px 0;
-    letter-spacing: 0.02em;
-}
-
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-}
-
 .logo-header {
-    margin-right: 76px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  margin-right: 76px;
 }
-
 .logo-span {
-    color: #2e2f42;
-    letter-spacing: 0.02em;
+  color: #2e2f42;
 }
-
-.navigations li a {
-    color: #2E2F42;
+.nav-ul {
+  display: flex;
+  gap: 40px; /* задает отступы межу flex элементами */
 }
-
+.nav-li a {
+  padding: 24px 0;
+}
+.contacts-ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
 .active {
-    font-weight: 500;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
-.active:hover, .active:focus {
-    color: #404bbf;
+.contacts-li {
+  padding: 24px 0;
 }
 
+.active:hover,
+.active:focus {
+  color: #404bbf;
+}
+a:hover,
+button:hover,
+a:focus,
+button:focus {
+  color: #404bbf;
+}
+/* Address */
 address {
-    font-style: normal;
+  font-style: normal;
+}
+.mail {
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
-.contacts a {
-    color: #434455;
+/* PROMO Section 1 */
+.section-promo {
+  padding: 188px 0;
 }
 
-a:hover, button:hover, a:focus, button:focus {
-    color: #404BBF;
+.promo-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+  max-width: 496px;
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* задает правиловыравнивание по головной оси */
+  align-items: center;
+}
+/* Button */
+button.btn {
+  color: #fff;
+  background-color: #4d5ae5;
+  display: block; /* блочные элементы занимают всю доступную ширину горизонтального пространства и начинают с новой строки */
+  min-width: 169px;
+  height: 56px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer; /* при наведении курсора на кнопку, он отображается как рука */
+  border-radius: 4px; /* закругления рамок */
+  border: none; /* отсуствие рамки (границ у элемента) */
+}
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
 }
 
-/* PROMO */
-
-.promo {
-    background-color: #2E2F42;
+/* PECULIARITIES Section 2 */
+.section-peculiarities {
+  padding: 120px 0;
 }
-
-.section.promo {
-    padding: 188px 0;
-}
-
-.promo .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.promo .promo-title {
-    font-size: 56px;
-    font-weight: 700;
-    color: #FFF;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-}
-
-.promo .btn {
-    background-color: #4D5AE5;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #FFF;
-    padding: 16px 32px;
-    border: none;
-    border-radius: 4px;
-    min-width: 169px;
-}
-
-.promo .btn:hover, .promo .btn:focus {
-    background-color: #404BBF;
-}
-
-
-/* PECULIARITIES */
-
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.peculiarities-ul {
+  display: flex;
+  gap: 24px;
+}
+.peculiarities-li {
+  width: calc((100% - 72px) / 4);
+}
+.item-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2; /* устанавливает межрядный интервал (высоту ряда текста) */
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.item-description {
+  letter-spacing: 0.02em;
 }
 
-.peculiarities .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* OUR TEAM Section 3 */
+.section-team {
+  padding: 120px 0;
+}
+.team-ul {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+.team-li {
+  width: calc((100 - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.section-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center; /* управляет выравниванием текста по горизонтали */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.team-li {
+  background-color: #fff;
+}
+.team-box {
+  padding: 32px 0;
+  text-align: center;
+}
+.item-title {
+  margin-bottom: 8px;
 }
 
-.peculiarities .container ul{
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+
+/* Our Portfolio Section 4 */
+.section-portfolio {
+  padding: 120px 0 120px 0;
 }
-
-.peculiarities .container li {
-    width: calc((100% - 3 * 24px) / 4);
+.section-title {
+  margin-bottom: 72px;
 }
-
-.peculiarities .container h3 {
-    margin-bottom: 8px;
+.portfolio-ul {
+  display: flex;
+  flex-wrap: wrap; /* для переноса элементов списка на новый ряд если им не   хватает места */
+  column-gap: 24px;
+  row-gap: 48px;
+  justify-content: space-between;
 }
-
-/* OUR TEAM */
-
-.team .container {
-    display: flex;
-    flex-direction: column;
+.portfolio-li {
+  width: calc(
+    (100% - 48px) / 3
+  ); /* для визначення ширини для елемента списку (від загальної ширини екрану віднімаємо суму відступів між пунктами і ділимо це на кількість пунктів списку в одному рядку) */
 }
-
-.team .container ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 24px;
+.portfolio-app {
+  border: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  border-top: none;
 }
-
-.team {
-    background-color: #F4F4FD;
-}
-
-.team h2 {
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-}
-
-.team li {
-    background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
-}
-
-.team h3 {
-    margin-bottom: 8px;
-}
-
-.team h3, .team p {
-    text-align: center;
-}
-
-.profile {
-    padding: 32px 0;
-}
-
-/* OUR PORTFOLIO */
-
-.portfolio .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.portfolio .container ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    column-gap: 24px;
-    row-gap: 48px;
-}
-
-.portfolio .container li {
-    width: calc(100% - 48px) / 3;
-}
-
-.portfolio-about {
-    border: 1px solid #e7e9fc;
-    padding: 32px 16px;
-    border-top: none;
-}
-
-.portfolio-about h3 {
-    margin-bottom: 8px;
-}
-
-.portfolio h2 {
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 72px;
+.portfolio-app h3 {
+  margin-bottom: 8px;
 }
 
 /* FOOTER */
-
 footer {
-    background-color: #2E2F42;
-    color: #F4F4FD;
-    padding: 100px 0;
+  background-color: #2e2f42;
+  color: #f4f4fd;
+  padding: 100px 0;
+}
+.logo-span-footer {
+  color: #f4f4fd;
 }
 
-.no-flex {
-    display: block;
+.footer .logo-header /* спецефичность выше для logo в footer */{
+  display: inline-block; /* характеристики блочного и строчного элементов */
+  margin-bottom: 17px;
+  margin-right: auto; /* Смещение влево с использованием auto маржи справа */
 }
-
-.footer .logo-footer {
-    display: inline-block;
-    margin-bottom: 16px;
-
-    color: #4d5ae5;
-}
-
-.footer p {
-    max-width: 264px
-}
-
-.footer .logo-footer .logo-span {
-    color:#f4f4fd;
-}
-
-/* ALL */
-
-.section-title {
-    font-size: 36px;
-    color: #2e2f42;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
-.item-title {
-    font-size: 20px;
-    color: #2e2f42;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-}
-
 .item-description {
-    letter-spacing: 0.02em;
-}
-
-button {
-    cursor: pointer;
+  max-width: 264px;
+  margin-right: auto; /* Смещение влево с использованием auto маржи справа */
 }

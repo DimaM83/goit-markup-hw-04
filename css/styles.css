@@ -28,11 +28,20 @@ ul {
 }
 
 /* HEDER */
+
+*::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
 .header {
   border-bottom: 1px solid #e7e9fc; /* Стиль линии в низу элемента */
-box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-
-
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
   display: flex;
@@ -45,7 +54,7 @@ box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.
   flex-direction: row;
   justify-content: space-between; /* отодвигает текст дочерных элементов */
 }
-.navigations::after {
+.navigations {
   display: flex;
   align-items: center; /* вирівнювання навігації та контактів по вертикалі */
 }
@@ -59,17 +68,10 @@ box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.
   color: #4d5ae5;
   margin-right: 76px;
 
+  
+  
 
-  position: relative; /*для элемента, это создает контекст позиционирования для этого элемента. Это означает, что все дочерние элементы этого элемента могут быть позиционированы относительно него, а не относительно всего документа.*/
-color: #404bbf;
-content: '';
-position: absolute;
-left: 0;
-  bottom: -1px;
-  height: 4px;
-  background-color: #404bbf;
-border-radius: 2px;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .logo-span {
   color: #2e2f42;
@@ -77,6 +79,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .nav-ul {
   display: flex;
   gap: 40px; /* задает отступы межу flex элементами */
+
 }
 .nav-li a {
   padding: 24px 0;
@@ -85,12 +88,16 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   gap: 40px;
   align-items: center;
-  
 }
 .active {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #2e2f42;
+
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative; /*для элемента, это создает контекст позиционирования для этого элемента. Это означает, что все дочерние элементы этого элемента могут быть позиционированы относительно него, а не относительно всего документа.*/
+color: #404bbf;
 }
 
 .contacts-li {
@@ -121,7 +128,7 @@ address {
 .section-promo {
   padding: 188px 0;
   background-color: #2e2f42;
-/* background-image: ; */
+  /* background-image: ; */
 }
 
 .promo-title {
@@ -133,7 +140,6 @@ address {
   max-width: 496px;
   font-weight: 700;
   margin-bottom: 48px;
- 
 }
 .container {
   display: flex;
@@ -197,7 +203,6 @@ button.btn {
 
 /* OUR TEAM Section 3 */
 
-
 .section-team {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -231,7 +236,6 @@ button.btn {
 .item-title {
   margin-bottom: 8px;
 }
-
 
 /* Our Portfolio Section 4 */
 .section-portfolio {
@@ -271,7 +275,7 @@ footer {
   color: #f4f4fd;
 }
 
-.footer .logo-header /* спецефичность выше для logo в footer */{
+.footer .logo-header /* спецефичность выше для logo в footer */ {
   display: inline-block; /* характеристики блочного и строчного элементов */
   margin-bottom: 17px;
   margin-right: auto; /* Смещение влево с использованием auto маржи справа */

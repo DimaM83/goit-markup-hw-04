@@ -125,11 +125,23 @@ address {
 }
 
 /* PROMO Section 1 */
-.section-promo {
+.section-promo .container {
   padding: 188px 0;
   background-color: #2e2f42;
-  /* background-image: ; */
+
+
+
+
+
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+max-width: 1440px;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
 }
+
+
 
 .promo-title {
   font-size: 56px;
@@ -160,6 +172,7 @@ button.btn {
   cursor: pointer; /* при наведении курсора на кнопку, он отображается как рука */
   border-radius: 4px; /* закругления рамок */
   border: none; /* отсуствие рамки (границ у элемента) */
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn:hover,
 .btn:focus {

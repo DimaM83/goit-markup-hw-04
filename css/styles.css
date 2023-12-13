@@ -126,6 +126,8 @@ address {
   padding: 188px 0;
   background-color: #2e2f42;
 
+
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -136,6 +138,9 @@ address {
   background-position: center;
   background-size: cover;
 }
+
+
+
 
 .promo-title {
   font-size: 56px;

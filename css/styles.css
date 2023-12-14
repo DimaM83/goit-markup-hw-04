@@ -286,8 +286,8 @@ color: #F4F4FD;
 background-color: #4d5ae5;
 border-radius: 50%;
 }
-.socials-link-a a:hover
-.socials-link-a a:focus {
+.socials-link-a:hover,
+.socials-link-a:focus {
   background-color: #404bbf;
 }
 

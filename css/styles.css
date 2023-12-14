@@ -284,15 +284,12 @@ button.btn {
   color: #f4f4fd;
   background-color: #4d5ae5;
   border-radius: 50%;
-  background-color: 250ms cubic-bexier(0.4, 0, 0.2, 1);
+ transition: background-color 250ms cubic-bexier(0.4, 0, 0.2, 1); /* Плавна зміна кольору фону */
 
 }
-.socials-link-a:hover {
- background-color:  #31D0AA;
-}
+.socials-link-a:hover,
 .socials-link-a:focus {
   background-color: #404bbf;
-  outline: none; /* Видалення рамки при фокусі */
 }
 .icons-social {
   fill: #f4f4fd;
@@ -322,7 +319,10 @@ button.btn {
 }
   .portfolio-li:hover {
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); /*для визначення тіні для елемента при наведені мишкою*/
- transform: translateY(0%);
+ 
+  }
+  .portfolio-app:hover {
+    transform: translateY(0%);
   }
 
 .portfolio-app {

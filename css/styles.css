@@ -321,7 +321,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
  
   }
 
-  .portfolio-li:hover .portfolio-app p {
+  .portfolio-li:hover,
+  .portfolio-app p:hover {
   transform: translateY(0%);
   }
  

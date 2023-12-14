@@ -270,6 +270,7 @@ button.btn {
 display: flex;
 justify-content: center;
 gap: 24px;
+background-color: 250ms cubic-bexier(0.4, 0, 0.2, 1);
 }
 .socials-item-li {
 width: 40px;
@@ -292,7 +293,7 @@ border-radius: 50%;
 }
 
  .icons-social {
-fill: currentColor;
+fill: #f4f4fd;
  }
 
 

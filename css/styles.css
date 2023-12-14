@@ -239,12 +239,9 @@ button.btn {
   width: calc((100 - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 
-
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-  
-
-
-
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .section-title {
   margin-bottom: 72px;
@@ -256,11 +253,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
   color: #2e2f42;
 }
 
-
-
-
-
-
 .team-li {
   background-color: #fff;
 }
@@ -271,8 +263,6 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 .item-title {
   margin-bottom: 8px;
 }
-
-
 
 /* Our Portfolio Section 4 */
 .section-portfolio {

@@ -270,12 +270,12 @@ button.btn {
 display: flex;
 justify-content: center;
 gap: 24px;
-background-color: 250ms cubic-bexier(0.4, 0, 0.2, 1);
+
 }
 .socials-item-li {
 width: 40px;
 height: 40px;
-
+background-color: 250ms cubic-bexier(0.4, 0, 0.2, 1);
 }
 .socials-link-a {
   display: flex;

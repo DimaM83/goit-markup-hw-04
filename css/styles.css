@@ -385,3 +385,8 @@ footer {
   color: #fff;
   margin-bottom: 16px;
 }
+
+.footer-icon {
+  display: flex;
+  gap: 16px;
+}

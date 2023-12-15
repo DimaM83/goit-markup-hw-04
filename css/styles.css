@@ -370,7 +370,11 @@ footer {
 
 
 
+.footer-container {
+  align-items: baseline;
+}
+
 .logo-footer-container {
   margin-right: 120px;
-  align-items: baseline;
+
 }

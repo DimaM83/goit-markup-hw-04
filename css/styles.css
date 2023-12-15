@@ -369,8 +369,12 @@ footer {
 }
 
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 
 .logo-footer-container {
-  align-items: baseline;
+  
   margin-right: 120px;
 }

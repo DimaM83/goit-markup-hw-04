@@ -386,7 +386,11 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-icons {
+.footer-icon-ul {
   display: flex;
   gap: 16px;
+}
+.footer-icon-li {
+  width: 40px;
+  height: 40px;
 }

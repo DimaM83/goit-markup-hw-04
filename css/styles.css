@@ -369,12 +369,7 @@ footer {
 }
 
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
 
 .logo-footer-container {
-  
   margin-right: 120px;
 }
